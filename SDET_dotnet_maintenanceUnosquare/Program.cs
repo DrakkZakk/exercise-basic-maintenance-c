@@ -30,15 +30,15 @@ namespace UnoSquare_Maintenance
         }
 
         #region Google Locators
-        By GoogleSearchBar = By.XPath("need maintenance");
-        By GoogleSearIcon = By.XPath("need maintenance");
-        By UnoSquareGoogleResult = By.XPath("need maintenance");
+        By GoogleSearchBar = By.XPath("//*[@name='q']");
+        By GoogleSearIcon = By.XPath("//*[@name='btnK']");
+        By UnoSquareGoogleResult = By.XPath("//h3[contains(text(),'Unosquare: Digital Transformation Services | Agile')]");
         #endregion
 
         #region UnoSquare Locators
-        By UnoSquareServicesMenu = By.XPath("need maintenance");
-        By PracticeAreas = By.XPath("need maintenance");
-        By ContactUs = By.XPath("need maintenance");
+        By UnoSquareServicesMenu = By.XPath("//*[@href='/Services' and @class='nav-link']");
+        By PracticeAreas = By.XPath("//*[@href='/PracticeAreas' and @class='nav-link']");
+        By ContactUs = By.XPath("//*[@href='/ContactUs' and @class='nav-link link-blue']");
         #endregion 
         static void Main(string[] args)
         {
